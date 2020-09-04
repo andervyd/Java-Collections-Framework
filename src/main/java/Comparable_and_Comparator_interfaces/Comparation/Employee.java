@@ -1,4 +1,4 @@
-//: implements Comparable and override method
+//: implements Comparator and override method
 
 package Comparable_and_Comparator_interfaces.Comparation;
 
@@ -69,6 +69,14 @@ class NameComparator implements Comparator<Employee> {
 }
 
 
+class SalaryComparator implements Comparator<Employee> {
+
+	public int compare(Employee emp1, Employee emp2) {
+		return emp1.getSalary() - emp2.getSalary();
+	}
+}
+
+
 class Output {
 	public static void main(String[] args) {
 		
@@ -86,27 +94,75 @@ class Output {
 		list.add(employee_4);
 		list.add(employee_5);
 		
-		System.out.println("Default sorting: 000");
+		System.out.println("Default sorting: ");
 		System.out.println(list);
 		
-//		Collections.sort(list, new IdComparator());
-//		
-//		System.out.println("Collections sorting 'id': ");
-//		System.out.println(list);
-//
+		Collections.sort(list, new IdComparator());
+
+		System.out.println("Collections sorting 'id': ");
+		System.out.println(list);
+
 		Collections.sort(list, new NameComparator());
 		
 		System.out.println("Collections sorting 'name': ");
 		System.out.println(list);
 
-		
-		
-		
-		
-		
+		Collections.sort(list, new SalaryComparator());
+
+		System.out.println("Collections sorting 'salary': ");
+		System.out.println(list);
+
 	}
 }/* Output:
+			Default sorting:
+			[Employee:
+			  id: 14, first name: Zaur, last name: Tregulov, salary: 2300;
+			, Employee:
+			  id: 2, first name: Ivan, last name: Tara, salary: 2600;
+			, Employee:
+			  id: 315, first name: John, last name: Snow, salary: 1800;
+			, Employee:
+			  id: 1456, first name: Petr, last name: Verhovez, salary: 4200;
+			, Employee:
+			  id: 64, first name: Ivan, last name: Smirnov, salary: 2600;
+			]
 
+			Collections sorting 'id':
+			[Employee:
+			  id: 2, first name: Ivan, last name: Tara, salary: 2600;
+			, Employee:
+			  id: 14, first name: Zaur, last name: Tregulov, salary: 2300;
+			, Employee:
+			  id: 64, first name: Ivan, last name: Smirnov, salary: 2600;
+			, Employee:
+			  id: 315, first name: John, last name: Snow, salary: 1800;
+			, Employee:
+			  id: 1456, first name: Petr, last name: Verhovez, salary: 4200;
+			]
+
+			Collections sorting 'name':
+			[Employee:
+			  id: 64, first name: Ivan, last name: Smirnov, salary: 2600;
+			, Employee:
+			  id: 2, first name: Ivan, last name: Tara, salary: 2600;
+			, Employee:
+			  id: 315, first name: John, last name: Snow, salary: 1800;
+			, Employee:
+			  id: 1456, first name: Petr, last name: Verhovez, salary: 4200;
+			, Employee:
+			  id: 14, first name: Zaur, last name: Tregulov, salary: 2300;
+			]
+
+			Collections sorting 'salary':
+			[Employee:
+			  id: 315, first name: John, last name: Snow, salary: 1800;
+			, Employee:
+			  id: 14, first name: Zaur, last name: Tregulov, salary: 2300;
+			, Employee:
+			  id: 64, first name: Ivan, last name: Smirnov, salary: 2600;
+			, Employee:
+			  id: 2, first name: Ivan, last name: Tara, salary: 2600;
+			, Employee:
+			  id: 1456, first name: Petr, last name: Verhovez, salary: 4200;
+			]
 *///:~
-
-

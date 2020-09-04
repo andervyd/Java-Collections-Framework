@@ -107,6 +107,7 @@ class Output {
 
 //		System.out.println("Collections sorting 'name': ");
 //		System.out.println(list);
+
 	}
 }/* Output:
 			Default sorting: 
@@ -148,7 +149,3 @@ class Output {
 			  id: 14, first name: Zaur, last name: Tregulov, salary: 2300;
 			]
 *///:~
-
-
-
-

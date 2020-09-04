@@ -1,4 +1,6 @@
-package Comparable_and_Comparator_interfaces.Comparation;
+//: Collections.sort
+
+package Comparable_and_Comparator_interfaces.Comparable;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -23,4 +25,10 @@ public class Sorting {
 		System.out.println(list);
 		
 	}
-}
+}/* Output:
+			Before sorting: 
+			[Alex, Zaur, Ivan, Petr]
+			After sorting: 
+			[Alex, Ivan, Petr, Zaur]
+*///:~
+

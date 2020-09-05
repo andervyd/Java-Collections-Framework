@@ -12,7 +12,7 @@ class Car {}
 public class NoGenerics {
 	public static void main(String[] args) {
 		
-		List list = new ArrayList(); // not correct (nonparametric)
+		List list = new ArrayList(); // not correct (non parameterized)
 		
 //		list.add("OK");
 //		list.add(27);

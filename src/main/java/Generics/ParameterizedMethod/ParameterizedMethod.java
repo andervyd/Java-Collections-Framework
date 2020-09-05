@@ -21,11 +21,11 @@ class Info <V> {
 		this.val = val;
 	}
 	
-	public V getVal() {  // if class parameterized: <V> not write 
+	public V getVal() {  
 		return val;
 	}
 	
-	public V methodV(V val) {
+	public V methodV(V val) {  // if class parameterized: <V> not write 
 		return val;
 	}
 	

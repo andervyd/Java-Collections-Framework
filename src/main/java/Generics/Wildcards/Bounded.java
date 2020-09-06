@@ -11,8 +11,6 @@ public class Bounded {
 //		List<? extends Number> listNum = new ArrayList<Integer>();
 //		List<? super Number> listNum = new ArrayList<Obgect>();
 		
-		
-		
 		ArrayList<Double> listDub = new ArrayList<>();
 		
 		listDub.add(2.19);
@@ -51,4 +49,9 @@ public class Bounded {
 		}
 		return sum;
 	}
-}
+}/* Output:
+			Sum ArrayList listDub = 94.49
+			-----------------------------
+			Sum ArrayList listInt = 115.0
+			-----------------------------
+*///:~

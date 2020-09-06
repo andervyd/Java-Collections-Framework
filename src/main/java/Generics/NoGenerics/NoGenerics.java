@@ -1,6 +1,6 @@
 //: Generics - specific type
 
-package Generics;
+package Generics.NoGenerics;
 
 import java.util.ArrayList;
 import java.util.List;

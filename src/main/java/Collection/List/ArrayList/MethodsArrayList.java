@@ -1,6 +1,5 @@
 //: Methods ArrayList
 
-
 package Collection.List.ArrayList;
 
 import java.util.ArrayList;
@@ -53,20 +52,53 @@ public class MethodsArrayList {
 		
 		System.out.println("\n" + "-----------------------");
 		
+		// set(int index, Data Type element) => Data Type
 		
+		System.out.println("Before: " + addListIndex.get(0));
 		
+		addListIndex.set(0, "Masha");
 		
-		
-		
-		
-		
-		
-		
-		
-		
-		
+		System.out.println("After: " + addListIndex.get(0));
+
+// Output: Before: Mary ||	After: Masha
 		
 		System.out.println("\n" + "-----------------------");
+
+		// remove(Object element) => boolean
+		
+		addListIndex.add("Kiril");
+		addListIndex.add("Max");
+		
+		for(String string : addListIndex) {
+			System.out.print(string + " ");
+		}
+// Output: Masha Oleg Petr Sveta Kiril Max		
+		
+		addListIndex.remove("Max");
+		System.out.println();
+		
+		for(String string : addListIndex) {
+			System.out.print(string + " ");
+		}
+// Output: Masha Oleg Petr Sveta Kiril		
+		
+		// remove(int index) => boolean
+		// addListIndex: [ Masha(0), Oleg(1), Petr(2), Sveta(3), Kiril(4) ]
+		
+		addListIndex.remove(1);		
+//		addListIndex.remove(8);	 // Exception: IndexOutOfBoundsException: Index 8 out of bounds for length 4
+		
+		System.out.println();
+		
+		for(String string : addListIndex) {
+			System.out.print(string + " ");
+		}
+// Output: Masha Petr Sveta Kiril		
+		
+		
+		
+		
+		
 		System.out.println("\n" + "-----------------------");
 		System.out.println("\n" + "-----------------------");
 		System.out.println("\n" + "-----------------------");

@@ -63,7 +63,8 @@ public class RemoveIntIndex {
 		System.out.println(listStudent);
 		
 		Student st6 = new Student("Sasha", 24, 4);
-		
+
+		// In the presence of щverride equals (!)с
 		listStudent.remove(st6);
 		
 		System.out.println(listStudent);
@@ -83,9 +84,3 @@ public class RemoveIntIndex {
 			, Student [name: Sveta, age: 22, course: 2]
 			]
 *///:~
-
-
-
-
-
-

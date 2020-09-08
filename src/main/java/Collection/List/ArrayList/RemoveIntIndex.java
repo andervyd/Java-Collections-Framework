@@ -64,7 +64,7 @@ public class RemoveIntIndex {
 		
 		Student st6 = new Student("Sasha", 24, 4);
 
-		// In the presence of щverride equals (!)с
+		// In the presence of override equals (!)
 		listStudent.remove(st6);
 		
 		System.out.println(listStudent);

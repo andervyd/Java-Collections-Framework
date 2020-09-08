@@ -63,7 +63,7 @@ public class IndeOfElement {
 
         Employee emp6 = new Employee("Sasha", 24, 4);
 
-        // In the presence of щverride equals (!)
+        // In the presence of override equals (!)
         System.out.println("\n" + "Index emp6: " + listEmployee.indexOf(emp6));
 
     }

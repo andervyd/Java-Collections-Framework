@@ -68,6 +68,7 @@ public class RemoveIntIndex {
 		
 		System.out.println(listStudent);
 		
+		
 	}
 }/* Output:
 			[Student [name: Mary, age: 23, course: 3]

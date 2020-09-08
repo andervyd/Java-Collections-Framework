@@ -1,10 +1,10 @@
+// indexOf(Object element) => int (return index element if not -1)
+
 package Collection.List.ArrayList;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
-
-
 
 
 class Employee {
@@ -65,8 +65,6 @@ public class IndeOfElement {
 
         // In the presence of щverride equals (!)
         System.out.println("\n" + "Index emp6: " + listEmployee.indexOf(emp6));
-
-
 
     }
 }/* Output:

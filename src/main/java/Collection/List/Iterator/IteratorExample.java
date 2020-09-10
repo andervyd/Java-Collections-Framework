@@ -11,7 +11,7 @@ package Collection.List.Iterator;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class Example {
+public class IteratorExample {
     public static void main(String[] args) {
 
         ArrayList<String> list = new ArrayList<>();

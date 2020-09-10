@@ -31,7 +31,7 @@ class Student {
 }
 
 
-public class Example {
+public class LinkedListExample {
     public static void main(String[] args) {
 
         Student st1 = new Student("Ivan", 3);

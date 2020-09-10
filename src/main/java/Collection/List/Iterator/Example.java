@@ -1,4 +1,4 @@
-// Interface Iterator:
+// Interface Collection.List.Iterator:
 //      With an iterator, you can remove an element (in foreach, not)
 //          hasNext() - if there is an item in the list
 //          next()    - next element
@@ -6,7 +6,7 @@
 
 // ONE LIFE !!!
 
-package Iterator;
+package Collection.List.Iterator;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -40,6 +40,6 @@ public class Example {
         while(iterator.hasNext()) {
             System.out.print(iterator.next() + " ");
         }
-
+        // Output:
     }
 }

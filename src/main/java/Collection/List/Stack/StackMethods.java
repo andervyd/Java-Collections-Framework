@@ -17,6 +17,7 @@ public class StackMethods {
 
         Stack<String> stackString = new Stack<>();
 
+        // .push()
         stackString.push("Ivan");
         stackString.push("Mary");
         stackString.push("Oleg");
@@ -25,12 +26,14 @@ public class StackMethods {
         System.out.println(stackString);
             // Output: [Ivan, Mary, Oleg, Sveta]
 
+        // .pop()
         System.out.println(stackString.pop());
 
         System.out.println(stackString);
         // Output: Sveta
         //        [Ivan, Mary, Oleg]
 
+        // .peek()
         System.out.println(stackString.peek());
 
         System.out.println(stackString);

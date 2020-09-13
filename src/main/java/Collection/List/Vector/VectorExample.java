@@ -1,4 +1,4 @@
-// Vector example and
+//: Vector example and
 //       his methods:
 //                   .add()
 //                   .get()

@@ -89,5 +89,15 @@ class PrintStudent {
 			//         hashCode student 4 = -2068301214
 			//         hashCode student 5 =  145074052
 
+		for(Map.Entry<Student, Double> mapFor : studentMap.entrySet()) {
+			System.out.println(mapFor);
+		}
+			// Output: Student: name=Mary, last name=Heel, course=3, avg=7.3
+		    //         Student: name=Ivan, last name=Petrov, course=2, avg=8.1
+			//         Student: name=John, last name=Lee, course=4, avg=6.9
+	
+		System.out.println(studentMap);
+			// Output: {Student: name=Mary, last name=Heel, course=3, avg=7.3, Student: name=Ivan, last name=Petrov, course=2, avg=8.1, Student: name=John, last name=Lee, course=4, avg=6.9}
+
 	}
 }

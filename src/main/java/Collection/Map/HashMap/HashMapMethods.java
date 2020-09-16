@@ -71,5 +71,10 @@ public class HashMapMethods {
 		System.out.println(map.entrySet());
 			// Output: [1=A, 2=B, 3=C, 4=D]
 	
+		for(Map.Entry<Integer, String> mapEntry : map.entrySet()) {
+			System.out.print(mapEntry + " ");
+		}
+			// Output: 1=A 2=B 3=C 4=D 
+		
 	}
 }

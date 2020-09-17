@@ -27,7 +27,21 @@ public class Student implements Comparable<Student> {
 		return "Student { name student: " + name
 				+ ", course: " + course + "} ";
 	}
-	
+
+	@Override
+	public boolean equals(Object o) {
+		if (this == o) return true;
+		if (o == null || getClass() != o.getClass()) return false;
+		Student student = (Student) o;
+		return course == student.course &&
+				Objects.equals(name, student.name);
+	}
+
+	@Override
+	public int hashCode() {
+		return Objects.hash(name, course);
+	}
+
 	@Override
 	public int compareTo(Student student) {
 		return this.course - student.course;
@@ -53,10 +67,10 @@ class Output {
 			
 		System.out.println(listStudentCompableCourse);
 			// Output: Student { name student: Zaur, course: 1} , 
-			//    				Student { name student: Mary, course: 2} , 
-			//	  	  		    Student { name student: Alex, course: 4} , 
-			//					Student { name student: Oleg, course: 3} , 
-			//					Student { name student: Saha, course: 2} 
+			//    	   Student { name student: Mary, course: 2} ,
+			//	  	   Student { name student: Alex, course: 4} ,
+			//		   Student { name student: Oleg, course: 3} ,
+			//		   Student { name student: Saha, course: 2}
 		
 		Queue<Student> listStudentComparatorName = new PriorityQueue<>(new Comparator<Student>() {
 			@Override
@@ -73,20 +87,10 @@ class Output {
 			
 		System.out.println(listStudentComparatorName);
 			// Output: Student { name student: Alex, course: 4} , 
-		    //                   Student { name student: Oleg, course: 3} ,
-		    //                   Student { name student: Mary, course: 2} , 
-		    //                   Student { name student: Zaur, course: 1} , 
-		    //                   Student { name student: Saha, course: 2} 
+		    //         Student { name student: Oleg, course: 3} ,
+		    //         Student { name student: Mary, course: 2} ,
+		    //         Student { name student: Zaur, course: 1} ,
+		    //         Student { name student: Saha, course: 2}
 
-
-		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }

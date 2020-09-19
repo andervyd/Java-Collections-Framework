@@ -35,6 +35,29 @@ public class StudentInfoV2 {
             //         Student #7 name: Sasha, sex: f, age: 20, course: 2, avgGrade: 8.7
             //         Student #8 name: Zaur, sex: m, age: 25, course: 5, avgGrade: 8.3
 
+        System.out.println("-----------------------------------------------------");
+        studentInfoV2.testStudents(list, new StudentChecks() {
+            @Override
+            public boolean check(Student student) {
+                return student.getAge() < 22;
+            }
+        });
+            // Output: Student #9 name: Sasha, sex: f, age: 20, course: 2, avgGrade: 8.7
+            //         Student #10 name: Petr, sex: m, age: 20, course: 2, avgGrade: 7.66
+
+        System.out.println("-----------------------------------------------------");
+        studentInfoV2.testStudents(list, (Student student) -> {
+            return student.getAge() > 22 && student.getAvgGrade() < 8.5 && student.getSex() == 'm';});
+        // Output: Student #11 name: Zaur, sex: m, age: 25, course: 5, avgGrade: 8.3
+
+    // or short write lambda:
+
+        System.out.println("-----------------------------------------------------");
+        studentInfoV2.testStudents(list, student -> student.getAge() > 22 && student.getAvgGrade() < 8.5 && student.getSex() == 'm');
+            // Output: Student #11 name: Zaur, sex: m, age: 25, course: 5, avgGrade: 8.3
+
+
+
     }
 
     public void testStudents(ArrayList<Student> student, StudentChecks checks) {

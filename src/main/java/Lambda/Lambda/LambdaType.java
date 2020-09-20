@@ -1,6 +1,6 @@
 //: Lambda type write example
 
-package Lambda.ReplacementLambda;
+package Lambda.Lambda;
 
 import java.util.*;
 
@@ -46,8 +46,9 @@ public class LambdaType {
 // Mixed type write lambda expression:
         type.returnMethod(list, letters -> { return letters.getLetter().equals("X");});
 
-
-
+// Interface
+        Info info = (Letters letters) -> { return letters.getLetter().equals("D");};
+        type.returnMethod(list, info);
     }
 }
 

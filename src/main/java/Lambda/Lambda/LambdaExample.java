@@ -1,6 +1,6 @@
 //: Lambda example
 
-package Lambda.ReplacementLambda;
+package Lambda.Lambda;
 
 public class LambdaExample {
     static void methodLE(I classI) {

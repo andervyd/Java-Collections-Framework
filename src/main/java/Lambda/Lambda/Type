@@ -1,0 +1,11 @@
+        method( () -> 5 );
+        method( (x) -> x.length() );
+        method( (String x) -> x.length() );
+        method( (x, y) -> x.length() );
+        method( (String x, String y) -> x.length() );
+
+        Compile time error:
+
+        method( x -> { x.length(); } );        || no 'return'
+        method( x -> { return x.length() } );  || no ';'
+        method( x, y -> x.length() );          || no '( x, y )'

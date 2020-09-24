@@ -1,11 +1,11 @@
-//: Stream method .map() (i)
+//: Stream method .map() (intermediate)
 
 package Stream.StreamMethod;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class StreamMethodMap {
+public class Map {
     public static void main(String[] args) {
 
         List<String> list = new ArrayList<>();

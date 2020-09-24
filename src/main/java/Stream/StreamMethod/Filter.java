@@ -1,13 +1,11 @@
-//: Stream method .filter() (i)
+//: Stream method .filter() (intermediate)
 
 package Stream.StreamMethod;
-
-import org.w3c.dom.stylesheets.LinkStyle;
 
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class StreamMethodFilter {
+public class Filter {
     public static void main(String[] args) {
 
         Student st1 = new Student("Ivat",  'm', 21, 3, 8.4);

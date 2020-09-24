@@ -1,10 +1,10 @@
-//: Stream method .forEach() (t)
+//: Stream method .forEach() (terminal)
 
 package Stream.StreamMethod;
 
 import java.util.Arrays;
 
-public class StreamMethodForEach {
+public class ForEach {
     public static void main(String[] args) {
 
         String[] array = {"A", "G", "T", "S", "X", "K", "O"};

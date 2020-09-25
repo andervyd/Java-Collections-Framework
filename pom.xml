@@ -4,14 +4,48 @@
   <artifactId>JavaCollectionsFramework</artifactId>
   <version>0.0.1-SNAPSHOT</version>
 
+	<properties>
+
+		<slf4j.version>1.7.30</slf4j.version>
+		<log4j.version>2.13.3</log4j.version>
+		<maven.version>3.8.1</maven.version>
+		<javadoc.version>3.2.0</javadoc.version>
+		<junit.version>4.13</junit.version>
+
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<version>${slf4j.version}</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>${log4j.version}</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/junit/junit -->
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
 
 <build>
+
      <plugins>
      
 		<plugin>
 		    <groupId>org.apache.maven.plugins</groupId>
 		    <artifactId>maven-compiler-plugin</artifactId>
-		    <version>3.8.1</version>
+		    <version>${maven.version}</version>
 		    <configuration>
 		        <release>11</release>
 		    </configuration>
@@ -20,14 +54,16 @@
 		<plugin>
 	        <groupId>org.apache.maven.plugins</groupId>
 	        <artifactId>maven-javadoc-plugin</artifactId>
-	        <version>3.2.0</version>
+	        <version>${javadoc.version}</version>
 	        <configuration>
 	    
 	        </configuration>
       </plugin>
       
     </plugins>
+
 </build>
+
 
 
 </project>

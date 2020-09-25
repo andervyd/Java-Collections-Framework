@@ -1,4 +1,4 @@
-package Temp;
+package JUnit;
 
 import org.junit.Test;
 
@@ -17,7 +17,7 @@ public class RunTest {
 
         try {
 
-            Class classPath = Class.forName("Temp.JUnitTest");
+            Class classPath = Class.forName("JUnit.JUnitTest");
 
             Constructor constructors = classPath.getConstructor();
             Object entity = constructors.newInstance();

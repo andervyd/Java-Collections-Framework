@@ -1,4 +1,4 @@
-package Temp;
+package JUnit;
 
 import java.util.*;
 

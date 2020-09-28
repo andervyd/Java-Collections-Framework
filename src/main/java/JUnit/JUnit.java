@@ -1,5 +1,6 @@
 package JUnit;
 
+import org.slf4j.*;
 import java.util.*;
 
 public class JUnit {
@@ -13,11 +14,11 @@ public class JUnit {
 
         List<Car> list = new ArrayList<>();
 
-        list.add(car1);
-        list.add(car2);
-        list.add(car3);
-        list.add(car4);
-        list.add(car5);
+//        list.add(car1);
+//        list.add(car2);
+//        list.add(car3);
+//        list.add(car4);
+//        list.add(car5);
 
         list.stream().forEach(System.out::println);
             // Output: Car #1 color: red, door: 4, age: 1994, engine: V6
@@ -37,6 +38,8 @@ public class JUnit {
 }
 
 class Car {
+
+    private static final Logger logger = LoggerFactory.getLogger(Car.class);
 
     private String color;
     private int door;
@@ -68,10 +71,18 @@ class Car {
     }
 
     public static void sortCar(List<Car> list) {
-        for(Car carList : list) {
-            if(carList.getColor().equals("black")) {
-                System.out.println(carList);;
+        try {
+            if(list.isEmpty()) {
+                throw new RuntimeException();
+            } else {
+                for (Car carList : list) {
+                    if (carList.getColor().equals("black")) {
+                        System.out.println(carList);
+                    }
+                }
             }
+        } catch (NullPointerException exception) {
+            logger.error(exception.getMessage(), exception);
         }
     }
 

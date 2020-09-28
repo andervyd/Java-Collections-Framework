@@ -1,6 +1,6 @@
 package JUnit;
 
-import org.junit.Test;
+import org.junit.*;
 
 public class JUnitTest {
 
@@ -10,13 +10,15 @@ public class JUnitTest {
     }
 
     @Test
+    @Ignore
     public void testMethod2() {
         System.out.println("Run method: 'testMethod 2'");
     }
 
-//    @Test
+    @Test
     public void testMethod3() {
         System.out.println("Run method: 'testMethod 3'");
+//        throw new RuntimeException("Exception");
     }
 
 }

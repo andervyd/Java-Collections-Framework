@@ -1,20 +1,17 @@
 //: FileInputStream
 //: FileOutputStream
 
-package IOAndNIO.WorkingWithTextFile;
+package IOAndNIO.WorkingWithBinaryFile;
 
-import java.io.FileInputStream;
-import java.io.FileNotFoundException;
-import java.io.FileOutputStream;
-import java.io.IOException;
+import java.io.*;
 
 public class FileInputAndOutputStream {
     public static void main(String[] args) {
 
         try (FileInputStream inputStream =
-                     new FileInputStream("src/main/java/IOAndNIO/WorkingWithTextFile/resources/code.png");
+                     new FileInputStream("src/main/java/IOAndNIO/WorkingWithBinaryFile/resources/code.png");
              FileOutputStream outputStream =
-                     new FileOutputStream("src/main/java/IOAndNIO/WorkingWithTextFile/resources/new_code.png")) {
+                     new FileOutputStream("src/main/java/IOAndNIO/WorkingWithBinaryFile/resources/new_code.png")) {
             int input;
             while((input = inputStream.read()) != -1) {
                 outputStream.write(input);

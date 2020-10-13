@@ -15,7 +15,7 @@ public class CloneArrayList {
             source.add(i);
         }
 
-//        ArrayList<Integer> target = new ArrayList<>();
+//        ArrayList<Integer> target =  new ArrayList<>();
 
         List<Integer> syncList =
                 Collections.synchronizedList(new ArrayList<>());

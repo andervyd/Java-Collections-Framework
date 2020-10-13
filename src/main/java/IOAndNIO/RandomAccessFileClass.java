@@ -5,7 +5,7 @@
 //                .getFilePointer()
 //                .write()
 
-package IOAndNIO.WorkingWithTextFile;
+package IOAndNIO;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

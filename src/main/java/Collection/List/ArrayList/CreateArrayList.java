@@ -6,8 +6,6 @@
 //         4) List<Data Type> list = new ArrayList<>(); 
 //         5) ArrayList<Data Type> list = new ArrayList<>(anotherList); 
 
-
-
 package Collection.List.ArrayList;
 
 import java.util.ArrayList;

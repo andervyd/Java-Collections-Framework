@@ -1,6 +1,6 @@
 //: Deserialization with ObjectInputStream example
 
-package IOAndNIO.Serialization.ProgInputOne;
+package IOAndNIO.IO.Serialization.ProgInputOne;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

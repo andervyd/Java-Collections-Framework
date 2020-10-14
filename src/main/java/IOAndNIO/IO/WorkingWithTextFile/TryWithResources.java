@@ -1,7 +1,7 @@
 //: Try with resources
 //             (try ( ... ) { ... } ) [auto .close()]
 
-package IOAndNIO.WorkingWithTextFile;
+package IOAndNIO.IO.WorkingWithTextFile;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

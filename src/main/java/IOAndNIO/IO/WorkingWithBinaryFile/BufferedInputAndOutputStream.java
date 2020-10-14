@@ -1,7 +1,7 @@
 //: BufferedInputStream (FileInputStream)
 //: BufferedOutputStream (FileOutputStream)
 
-package IOAndNIO.WorkingWithBinaryFile;
+package IOAndNIO.IO.WorkingWithBinaryFile;
 
 import java.io.*;
 

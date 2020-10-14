@@ -1,6 +1,6 @@
 //: BufferedWriter example
 
-package IOAndNIO.WorkingWithTextFile;
+package IOAndNIO.IO.WorkingWithTextFile;
 
 import java.io.BufferedWriter;
 import java.io.FileWriter;

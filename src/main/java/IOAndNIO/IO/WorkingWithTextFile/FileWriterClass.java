@@ -2,7 +2,7 @@
 //     FileWriter writer = new FileWriter("path to file", true); [append - true]
 //         method .write()
 
-package IOAndNIO.WorkingWithTextFile;
+package IOAndNIO.IO.WorkingWithTextFile;
 
 import java.io.FileWriter;
 import java.io.IOException;

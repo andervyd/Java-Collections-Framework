@@ -1,6 +1,6 @@
-package IOAndNIO.Serialization.ProgInputTwo;
+package IOAndNIO.IO.Serialization.ProgInputTwo;
 
-import IOAndNIO.Serialization.ProgOutput.Employee;
+import IOAndNIO.IO.Serialization.ProgOutput.Employee;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;

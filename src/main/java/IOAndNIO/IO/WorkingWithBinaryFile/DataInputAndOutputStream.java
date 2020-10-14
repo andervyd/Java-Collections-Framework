@@ -1,7 +1,7 @@
 //: DataInputStream
 //  DataOutputStream
 
-package IOAndNIO.WorkingWithBinaryFile;
+package IOAndNIO.IO.WorkingWithBinaryFile;
 
 import java.io.*;
 

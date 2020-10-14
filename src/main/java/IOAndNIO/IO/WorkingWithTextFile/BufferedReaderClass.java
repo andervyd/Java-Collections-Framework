@@ -1,7 +1,7 @@
 //: BufferedReader example
 //       method .readLine()
 
-package IOAndNIO.WorkingWithTextFile;
+package IOAndNIO.IO.WorkingWithTextFile;
 
 import java.io.BufferedReader;
 import java.io.FileNotFoundException;

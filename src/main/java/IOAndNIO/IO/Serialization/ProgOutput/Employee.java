@@ -1,4 +1,4 @@
-package IOAndNIO.Serialization.ProgOutput;
+package IOAndNIO.IO.Serialization.ProgOutput;
 
 import java.io.Serializable;
 

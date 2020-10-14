@@ -2,7 +2,7 @@
 //      FileReader reader = new FileReader()
 //           method .read()
 
-package IOAndNIO.WorkingWithTextFile;
+package IOAndNIO.IO.WorkingWithTextFile;
 
 import java.io.FileNotFoundException;
 import java.io.FileReader;

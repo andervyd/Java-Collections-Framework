@@ -5,7 +5,7 @@
 //                .getFilePointer()
 //                .write()
 
-package IOAndNIO;
+package IOAndNIO.IO;
 
 import java.io.FileNotFoundException;
 import java.io.IOException;

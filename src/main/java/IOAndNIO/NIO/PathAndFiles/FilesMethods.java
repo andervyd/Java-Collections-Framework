@@ -27,8 +27,7 @@ public class FilesMethods {
         Path filePath = Paths.get("src" + File.separator + "main" + File.separator + "java" +
                 File.separator + "IOAndNIO" + File.separator + "NIO" + File.separator + "PathAndFiles" +
                     File.separator + "resources" + File.separator + "test.txt");
-        Path directoryPath = Paths.get("D:" + File.separator + "JAVA" + File.separator + "Java_learn" +
-                File.separator + "Java-Collections-Framework" + File.separator + "src" + File.separator + "main" +
+        Path directoryPath = Paths.get("src" + File.separator + "main" +
                     File.separator + "java" + File.separator + "IOAndNIO" + File.separator + "NIO" + File.separator + "PathAndFiles" +
                         File.separator + "resources" + File.separator + "Folder");
 

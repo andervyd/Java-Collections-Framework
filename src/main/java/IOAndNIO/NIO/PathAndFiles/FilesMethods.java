@@ -79,7 +79,5 @@ public class FilesMethods {
             //          isOther : false
             //          isDirectory : false
 
-
-
     }
 }

@@ -1,0 +1,11 @@
+class Files:
+    Files.exists(path)
+    Files.createFile(path)
+    Files.createDirectory(path)
+    Files.isReadable()
+    Files.isWritable()
+    Files.isExecutable()
+    Files.isSameFile(path1, path2)
+    Files.size()
+    Files.getAttribute(path, attribute_name)
+    Files.readAttributes(path,s attributes)

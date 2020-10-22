@@ -6,12 +6,6 @@
 //                  Files.getAttribute(path, attribute_name)
 //                  Files.readAttributes(path, attributes)
 
-//                  Files.copy(path1, path2, copy_options)
-//                  Files.move(path1, path2, copy_options)
-//                  Files.delete(path)
-//                  Files.write(path, byte_array)
-//                  Files.readAllLines(path)
-
 package IOAndNIO.NIO.PathAndFiles;
 
 import java.io.File;
@@ -50,7 +44,7 @@ public class FilesMethods {
         System.out.println("--------------------------");
         Path filePathNew = Paths.get("src" + File.separator + "main" + File.separator + "java" +
                 File.separator + "IOAndNIO" + File.separator + "NIO" + File.separator + "PathAndFiles" +
-                    File.separator + "resources" + File.separator + "test2.txt");
+                    File.separator + "resources" + File.separator + "dialog.txt");
         System.out.println(Files.isSameFile(filePath, filePathNew));
             // Output: false
 

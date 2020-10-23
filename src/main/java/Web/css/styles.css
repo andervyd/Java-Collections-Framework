@@ -1,3 +1,19 @@
-body {
+.text-black {
+    color: black;
+}
+
+.text-red {
     color: red;
+}
+
+#text-bold {
+    color: green;
+}
+
+#text-i {
+    color: purple;
+}
+
+div b {
+    color: yellow;
 }

@@ -3,9 +3,6 @@
 ![Image JAVA_logo](https://github.com/andervyd/Java-Collections-Framework/blob/master/resources/java_logo.png) 
 [The course was created by Zaur Tregulov](https://www.udemy.com/course/java-ot-zaura/)
 
-### Collection Framework Hierarchy
-![Image Collection-framework-hierarchy](https://github.com/andervyd/Java-Collections-Framework/blob/master/resources/Collection-framework-hierarchy.png)
-
 ### Contents:
 
 #### [01 Introduction](https://github.com/andervyd/Java-Collections-Framework)
